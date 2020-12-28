@@ -1,0 +1,74 @@
+h1 {
+    padding: 10px 10px;
+}
+
+.aboutCards {
+    padding: 1rem 0rem  1rem 0;
+    border-radius: 15px;
+    border-radius: 1.5rem;
+    cursor: none;
+    background-size: cover;
+    cursor: default;
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  }
+
+  .aboutSecondCards {
+    padding: 0.2rem 0rem  0rem 0;
+    border-radius: 15px;
+    /* border-radius: 1.5rem; */
+    cursor: none;
+    background-size: cover;
+    cursor: default;
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  }
+
+  .header4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    padding-top: 0.3rem;
+    padding-bottom: -5rem;
+    margin-left: -10px;
+    font-size: 2.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    /* word-spacing: 100vw; */
+    font-weight: 700;
+  }
+  
+  .text4 {
+    font-size: 20px;
+  }
+
+  .mainDescription {
+    padding-top: 90px;
+    padding-bottom: 10px;
+  }
+
+  .container3 {
+    width: 360px;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    border-radius: 1.5rem;
+    margin: auto;
+    cursor: none;
+    background: url("https://images.unsplash.com/photo-1606056041654-f203e0351229?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-color: var(--background-dark);
+    background-size: cover;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }

@@ -1,0 +1,29 @@
+.portfolioCard {
+    padding:  0rem   0;
+    /* background-image: linear-gradient(#09D8C4, #fff, #222F6D); */
+    border-radius: 15px;
+    border-radius: 1.5rem;
+    background-size: cover;
+    cursor: default;
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  }
+
+  .portfolioCardInside {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+
+  .headerPortfolio {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-left: -10px;
+    font-size: 2.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  .headerTextPortfolio { 
+    font-size: 20px;
+  }

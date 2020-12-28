@@ -1,0 +1,37 @@
+.contactCard {
+  bottom: 0;
+  padding: 1rem 0rem  1rem 0;
+  border-radius: 15px;
+  border-radius: 1.5rem;
+  cursor: none;
+  background-size: cover;
+  cursor: default;
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  }
+
+  .contactCardInside {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+.header5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  padding-top: 0.3rem;
+  padding-bottom: -5rem;
+  margin-left: -10px;
+  font-size: 2.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  /* word-spacing: 100vw; */
+  font-weight: 700;
+}
+
+.text5 {
+  font-size: 20px;
+}
+
+.text6 {
+  font-size: 30px;
+}

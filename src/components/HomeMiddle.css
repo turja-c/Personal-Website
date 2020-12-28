@@ -1,0 +1,55 @@
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+.social-icons {
+    color: #fff;
+    cursor: pointer;
+    align-self: left;
+    font-size: 2rem;
+    display: flex;
+    padding: 0px 25px 0 0;
+    }
+
+.header {
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+    padding-top: 0.3em;
+    margin-left: -10px;
+    /* font-size: 2.9rem; */
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    /* line-height: 1.4; */
+    font-weight: 650;
+    
+}
+
+.text {
+    /* font-family: 'Merriweather', serif; */
+    font-size: 18px;
+}
+
+.face {
+    width: 100%;
+    height: auto;
+    padding: 20;
+    cursor: default;
+    padding-top: -200px;
+    position: relative;
+    /* top:90px; */
+    margin-top: -335px;
+    margin-left: 280px;
+}
+
+@media (max-width: 970px) {
+    .header {
+        margin-top: -2rem;
+    }
+    .text {
+        /* font-family: 'Merriweather', serif; */
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    .face {
+        display: none;
+    }
+}

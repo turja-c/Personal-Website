@@ -1,0 +1,16 @@
+.social-icons-footer {
+    color: #000;
+    cursor: pointer;
+    align-self: left;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 0 19px 0 0;
+    }
+
+.footer {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    /* bottom:0; */
+    right:0;
+}
