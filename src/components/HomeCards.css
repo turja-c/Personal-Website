@@ -2,7 +2,7 @@
     --background-dark: #2d3548;
     --text-light: rgba(255,255,255,0.6);
     --text-lighter: rgba(255,255,255,0.9);
-    --gradient: linear-gradient(#222F6D, #fff, #fff);
+    --gradient: linear-gradient(#222F6D, #fff);
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;

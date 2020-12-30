@@ -179,7 +179,7 @@ export default function App() {
             <Card.Text>
               This website was created to display my portfolio! 
             </Card.Text>
-            <Button disabled variant="primary" onClick={() => setModalShow(true)}>
+            <Button  variant="primary" onClick={() => setModalShow(true)}>
                 Learn more
             </Button>
 

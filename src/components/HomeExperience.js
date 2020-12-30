@@ -12,15 +12,12 @@ export default function App() {
   const divStyle1 = {
     marginTop: '60px',
     marginBottom: '90px',
-    // backgroundImage: 'linear-gradient(#222F6D, #fff, #fff)'
   };
 
   const divStyle2 = {
     marginTop: '20px',
     marginBottom: '25px',
-    marginRight: ''
-    // backgroundImage: 'linear-gradient(#222F6D, #fff, #fff)'
-
+    color: '#fff'
   };
 
   const divStyle4 = {
@@ -42,7 +39,6 @@ export default function App() {
       backgroundImage: 'linear-gradient(#222F6D, #fff, #fff)'
 
     };
-
     
 
   return (
@@ -76,15 +72,17 @@ export default function App() {
                   <div className="row container ">
                   <Card border="primary-light" style={divStyle4}>
                         <Card.Body>
-                          {/* <Card.Title>Canada's  Restaurants</Card.Title> */}
+                          <a href="https://www.torontomachinelearning.com" target="_blank">
                           <Card.Img variant="top" src='images/tmls.png' height="110" width="20"/>
+                          </a>
                         </Card.Body>
                       </Card>
                   
                   <Card border="primary-light" style={divStyle4}>
                         <Card.Body>
-                          {/* <Card.Title>Canada's  Restaurants</Card.Title> */}
+                          <a href="https://www.mlopsworld.com" target="_blank">
                           <Card.Img variant="top" src='images/mlops.png' height="110" width="0.5"/>
+                          </a>
                         </Card.Body>
                       </Card>
                   
@@ -98,28 +96,33 @@ export default function App() {
                     <div className="row container">
                         <Card border="primary-light" style={divStyle4}>
                         <Card.Body>
-                          {/* <Card.Title>Canada's  Restaurants</Card.Title> */}
-                          <Card.Img variant="top" src='images/optimity.png' height="110" width="0.5" href="url(google.ca)"/>
+                          <a href="https://www.myoptimity.com" target="_blank">
+                            <Card.Img variant="top" src='images/optimity.png' height="110" width="0.5" href="url(google.ca)"/>
+                          </a>
                         </Card.Body>
                       </Card>
                   </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third" style={divStyle2}>
                     <h5>Server Assistant </h5>
-                    <h7> Supported cross functional teams including Back of House and Operations in managing customer experience and inquires <br></br>
-                      Trained and supervised 7 new employees to successfully transition into designated positions
-</h7>
+                    <h7>
+                      Alobar Yorkville restaurant is located in Toronto, Canada within the Alo Food Group. This restaurant provides 
+                      an incredible dining experience from the detail-oriented customer service to the remarkable food combining European
+                      & Asian influences. 
+                    </h7>
                     <div className="row container">
                         <Card border="primary-light" style={divStyle4}>
                         <Card.Body>
-                          {/* <Card.Title>Canada's  Restaurants</Card.Title> */}
-                          <Card.Img variant="top" src='images/alo-bar-logo.svg' height="110" width="0.5"/>
+                          <a href="https://alobaryorkville.com/" target="_blank">
+                            <Card.Img variant="top" src='images/alo-bar-logo.svg' height="110" width="0.5"/>
+                          </a>
                         </Card.Body>
                       </Card>
                       <Card border="primary-light" style={divStyle5}>
                         <Card.Body>
-                          {/* <Card.Title>Canada's  Restaurants</Card.Title> */}
-                          <Card.Img variant="top" src='images/can100.png' height="110" width="0.5"/>
+                          <a href="https://canadas100best.com/best-restaurants-2020-alobar-yorkville/" target="_blank">
+                            <Card.Img variant="top" src='images/can100.png' height="110" width="0.5"/>
+                          </a>
                         </Card.Body>
                       </Card>
                   </div>
