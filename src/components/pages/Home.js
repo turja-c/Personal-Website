@@ -5,7 +5,10 @@ import Footer from "../Footer";
 import HomeMiddle from "../HomeMiddle";
 import HomeCards from "../HomeCards";
 import HomeMidDivider from "../HomeMidDivider";
+import HomeSecondMidDivider from "../HomeSecondMidDivider";
 import HomeExperience from "../HomeExperience";
+import HomeContact from "../HomeContact";
+
 function Home() {
     return (
         <>
@@ -14,6 +17,8 @@ function Home() {
             <HomeCards />
             <HomeMidDivider />
             <HomeExperience />
+            <HomeSecondMidDivider />
+            <HomeContact />
             <Footer />
         </>
     )

@@ -66,10 +66,7 @@
     width: auto;
     height: auto;
     padding: 2rem 2rem 2rem 2rem;
-    
     border-radius: 1.5rem;
-    /* margin: auto; */
-    /* background: url("https://images.unsplash.com/photo-1606056041654-f203e0351229?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"); */
     background: var(--gradient);
     background-size: cover;
     cursor: default;

@@ -10,8 +10,10 @@ import './HomeExperience.css'
 
 export default function App() {
   const divStyle1 = {
-    marginTop: '60px',
-    marginBottom: '90px',
+    marginTop: '40px',
+    marginBottom: '120px',
+    zIndex: '1',
+    position: 'relative'
   };
 
   const divStyle2 = {
@@ -51,8 +53,8 @@ export default function App() {
             <Row className='cards' >
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column" style={divStyle2}>
-                  <Nav.Item>
-                    <Nav.Link eventKey="first">Toronto Machine Learning</Nav.Link>
+                  <Nav.Item >
+                    <Nav.Link eventKey="first" >Toronto Machine Learning</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link eventKey="second">Optimity</Nav.Link>

@@ -1,0 +1,30 @@
+:root{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --gradient: linear-gradient(#222F6D, #fff);
+  }
+  .header4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    padding-top: 0.3rem;
+    padding-bottom: -5rem;
+    margin-left: -10px;
+    font-size: 2.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    /* word-spacing: 100vw; */
+    font-weight: 700;
+  }
+
+  .container2 {
+    color: #fff;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    background: var(--gradient);
+    background-size: cover;
+    cursor: default;
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+    }
+  

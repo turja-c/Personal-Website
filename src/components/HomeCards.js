@@ -4,6 +4,8 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import {Link} from "react-router-dom";
+
 import "./HomeCards.css";
 
 export default function App() {
@@ -175,7 +177,13 @@ export default function App() {
     <>
     <div className='container' style={divStyle1}>
             <h1 className="header2">PORTFOLIO</h1>
-            <p className="text2">The following projects are my most recent and featured projects. Click here for the full list of my portfolio.</p>
+            <p className="text2">The following projects are my most recent and featured projects. 
+            &nbsp;
+            <Link to="./Portfolio">
+              Click here 
+              </Link>
+              &nbsp;
+            for the full list of my portfolio.</p>
         <CardDeck className="row ">
         <Card className="col-sm container2 ">
             <Card.Title variant="top" height="180" width="10" className="card__heading">
