@@ -2,7 +2,6 @@
     --background-dark: #2d3548;
     --text-light: rgba(255,255,255,0.6);
     --text-lighter: rgba(255,255,255,0.9);
-    --gradient: linear-gradient(#222F6D, #fff);
   }
   .header4 {
     font-family: 'Inter', sans-serif;
@@ -21,7 +20,6 @@
     color: #fff;
     padding: 2rem 2rem 2rem 2rem;
     border-radius: 1.5rem;
-    background: var(--gradient);
     background-size: cover;
     cursor: default;
     -webkit-box-shadow: 0 0 5px #000;

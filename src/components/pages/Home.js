@@ -17,8 +17,6 @@ function Home() {
             <HomeCards />
             <HomeMidDivider />
             <HomeExperience />
-            <HomeSecondMidDivider />
-            <HomeContact />
             <Footer />
         </>
     )

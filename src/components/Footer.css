@@ -8,9 +8,8 @@
     }
 
 .footer {
-    background-color: transparent;
+    background-color: #fff;
     position: absolute;
     left: 0;
-    /* bottom:0; */
     right:0;
 }

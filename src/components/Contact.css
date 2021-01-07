@@ -1,19 +1,13 @@
 .contactCard {
-  bottom: 0;
-  padding: 1rem 0rem  1rem 0;
-  border-radius: 15px;
+  color: #000;
+  padding: 2rem 2rem 2rem 2rem;
   border-radius: 1.5rem;
-  cursor: none;
   background-size: cover;
+  background: linear-gradient(#222F6D, #fff);
   cursor: default;
   -webkit-box-shadow: 0 0 5px #000;
         box-shadow: 0 0 5px #000;
   }
-
-  .contactCardInside {
-    padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
-}
 
 .header5 {
   font-family: 'Inter', sans-serif;

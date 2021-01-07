@@ -4,6 +4,9 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import About from "../About";
 import AboutCards from "../AboutCards";
+import AboutTravel from "../AboutTravel";
+// import ResponsiveGallery from 'react-responsive-gallery';
+
 
 export default function App() {
   return (
@@ -11,6 +14,7 @@ export default function App() {
         <Navbar />
         <About />
         <AboutCards />
+        <AboutTravel />
         <Footer />
     </>
   );

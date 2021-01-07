@@ -21,7 +21,8 @@ export default function App() {
     const divStyle3 = {
       marginTop: '5px',
       marginBottom: '-15px',
-      fontSize: '25px'
+      fontSize: '25px',
+      color: '#fff'
     };
 
       function MyVerticallyCenteredModal(props) {
@@ -179,7 +180,7 @@ export default function App() {
             <Card.Text>
               This website was created to display my portfolio! 
             </Card.Text>
-            <Button  variant="primary" onClick={() => setModalShow(true)}>
+            <Button disabled variant="primary" onClick={() => setModalShow(true)}>
                 Learn more
             </Button>
 

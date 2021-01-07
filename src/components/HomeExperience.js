@@ -11,7 +11,7 @@ import './HomeExperience.css'
 export default function App() {
   const divStyle1 = {
     marginTop: '40px',
-    marginBottom: '120px',
+    marginBottom: '40px',
     zIndex: '1',
     position: 'relative'
   };

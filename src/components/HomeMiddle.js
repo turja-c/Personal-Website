@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
@@ -12,8 +12,9 @@ import {
     FaLinkedin,
     FaGithub
   } from 'react-icons/fa';
+import {useTransition, animated} from 'react-spring';
+import {Transition} from 'react-spring/renderprops';
 
-  
 export default function App() {
 
     const divStyle3 = {
@@ -22,11 +23,10 @@ export default function App() {
     };
 
     const TEXTS = [
-      "Hello!",
-      "Bonjour!",
-      "নমস্কার!",
-      "Hola!",
-      "নমস্কার!"
+      "Hello! 👋🏽",
+      "Bonjour! 👋🏽",
+      "নমস্কার! 👋🏽",
+
     ];
 
     const [index, setIndex] = React.useState(0);
@@ -34,10 +34,16 @@ export default function App() {
     React.useEffect(() => {
       const intervalId = setInterval(() =>
         setIndex(index => index + 1),
-        5000 // every 3 seconds
+        8000 
       );
     });
     
+    const [toggle, set] = useState(false)
+    const transitions = useTransition(toggle, null, {
+    from: { position: 'absolute', opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    })
     return (
       
       <>
@@ -50,11 +56,11 @@ export default function App() {
       }}>
             <div className='container' >
             <h1 className="header">
-              {/* <TextTransition
+              <TextTransition
               text={ TEXTS[index % TEXTS.length] }
               springConfig={ presets.wobbly }
-              /> */}
-              Hello!
+              />
+              {/* Hello! 👋🏽 */}
             </h1>
             <p className="text">My name is Turja Chowdhury, a marketing enthuiset-turned Computer Science <br></br>& Business Analytics Student currently attending Ryerson University.</p>
             <p className="text">I aspire to continue learning about the constantly changing technology industry <br></br> and diversifying my skills to adapt to new and complex challenges.</p>
