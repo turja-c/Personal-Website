@@ -23,7 +23,7 @@ export default function App() {
           &nbsp; &nbsp;
           <Nav.Link href="Contact">Contact</Nav.Link>
           &nbsp; &nbsp;
-          <Nav.Link eventKey={2} href={'//drive.google.com/file/d/14Z1uCecNAAPrUNo9q4PTIu-D_XmylPVc/view?usp=sharing'}> Resume </Nav.Link>
+          <Nav.Link eventKey={2} target="_blank" href={'https://drive.google.com/file/d/1g_PfYR9RmebCPoin53iMpILQ6YIYu4Nw/view?usp=sharing'}> Resume </Nav.Link>
           &nbsp; &nbsp;
         </Nav>
       </Navbar.Collapse>

@@ -17,7 +17,7 @@ export default function App() {
                 className="aboutFace"
                 />
                 <div className="rowText">
-             <h7> 🎓 Currently a Computer Science and Business Analytics student at Ryerson University </h7> 
+             <h7> 🎓 Currently studying Computer Science and Business Analytics at Ryerson University </h7> 
               <br></br><br></br>
               <h7>
               🏃🏽‍♂️ Passionate about learning how to innovate complex challenges 

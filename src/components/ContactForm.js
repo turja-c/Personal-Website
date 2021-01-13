@@ -1,5 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+    FaInstagram,
+    FaLinkedin,
+    FaGithub
+  } from 'react-icons/fa';
+import { BsEnvelope } from "react-icons/bs";
+
 
 class ContactForm extends Component {
   constructor() {
@@ -41,39 +51,81 @@ class ContactForm extends Component {
   }
   render() {
     let buttonText = this.state.status;
-    return (      
-        <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-            <div>
-            <label htmlFor="name">Name:</label>
-            <input
-                type="text"
-                id="name"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this)}
-                required
-            />
+
+    const divStyle1 = {
+        marginTop: '40px',
+        marginBottom: '50px'
+      };
+
+      const divStyle2 = {
+        marginTop: '20px',
+        marginBottom: '-30px'
+      };
+
+    return (  
+        <>
+        <div className="container" style={divStyle1}>
+            <h1 className="header4 ">CONTACT ME</h1>
+            <p className="text3">I'm always happy to chat! Please feel free to leave me a message.</p> 
+            <div className="text-center" style={divStyle1}>
+                <h1>
+                <a href="https://www.linkedin.com/in/turja-c">
+                    <FaLinkedin /> Linkedin &nbsp;
+                </a>
+                     |
+                     <a href="mailto: turja.c16@gmail.com">  
+                     &nbsp; <BsEnvelope /> Email &nbsp;
+                     </a>
+                     |
+                     <a href="https://github.com/turja-c">
+                     &nbsp;<FaGithub /> Github &nbsp;
+                     </a> 
+                     | 
+                     <a href="https://www.instagram.com/turja.c/">
+                     &nbsp;<FaInstagram /> Instagram
+                     </a>
+                     </h1>
+                     
             </div>
-            <div>
-            <label htmlFor="email">Email:</label>
-            <input
+        
+        <Form className="container2" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <Form.Group controlId="Form.ControlInput1">
+                <Form.Label htmlFor="name">Name: </Form.Label>
+                <Form.Control 
+                    placeholder="John Doe"
+                    type="text"
+                    id="name"
+                    value={this.state.name}
+                    onChange={this.handleChange.bind(this)}
+                    required />
+            </Form.Group>
+            <Form.Group controlId="Form.ControlInput1">
+            <Form.Label htmlFor="email">Email: </Form.Label>
+            <Form.Control 
                 type="email"
                 id="email"
                 value={this.state.email}
                 onChange={this.handleChange.bind(this)}
                 required
-            />
-            </div>
-            <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
+                placeholder="name@email.com" />
+            </Form.Group>
+            <Form.Group controlId="Form.ControlTextarea1">
+                <Form.Label htmlFor="message">Message:</Form.Label>
+                <Form.Control 
+                as="textarea" 
+                rows={4} 
+                placeholder="I'm curious to learn about..."
                 id="message"
                 value={this.state.message}
                 onChange={this.handleChange.bind(this)}
-                required
-            />
-            </div>
-            <button type="submit">{buttonText}</button>
-        </form>      
+                required/>
+            </Form.Group>
+            <Button variant="primary" type="submit">
+            {buttonText}
+            </Button>
+        </Form>   
+        </div>
+        </>   
     );
 }
 }
