@@ -3,16 +3,18 @@
     overflow: hidden;
     margin-top: -25rem;
     margin-bottom: -25rem;
-    background-image: url(./images/line2.png);
+    /* background-image: url(./images/line2.png); */
     padding: 35rem;
     cursor: default;
+    overflow: hidden;
 }
 
-@media (min-width: 550px) {
+/* @media (max-width: 550px) {
     .fitted {
         max-height: 100px;
         max-width: 50px;
         object-fit: fill;
         overflow: hidden;
+        margin-top: -55rem;
     } 
-}
+} */

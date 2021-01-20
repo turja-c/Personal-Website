@@ -17,16 +17,19 @@ export default function App() {
                 className="aboutFace"
                 />
                 <div className="rowText">
-             <h7> 🎓 Currently studying Computer Science and Business Analytics at Ryerson University </h7> 
-              <br></br><br></br>
-              <h7>
-              🏃🏽‍♂️ Passionate about learning how to innovate complex challenges 
-              </h7>
+              <h2 style={{ fontSize: "20px" }}> 🎓 Currently studying Computer Science and Business Analytics at Ryerson University </h2> 
               <br></br>
-            <br></br>
-              <h7>
+              <h2 style={{ fontSize: "20px" }}>
+              🏃🏽‍♂️ Passionate about learning how to innovate complex challenges 
+              </h2>
+              <br></br>
+              <h2 style={{ fontSize: "20px" }}>
               🏔 Love travelling and stepping out of my comfort zone
-              </h7>
+              </h2>
+              <br></br>
+              <h2 style={{ fontSize: "20px" }}>
+              🛠 Currently building 'NBA Player/Team Analyzer' using React, Javascript, HTML/CSS 
+              </h2>
               </div>
               </div>
     </div>

@@ -18,6 +18,20 @@ export default function App() {
         marginBottom: '60px'
       };
 
+    const divStyle2 = {
+      display: 'flex',
+        // flexDirection: isRowBased ? 'row' : 'column',
+        // justifyContent: 'space-around',
+        overflow: 'hidden',
+        marginTop: '-25rem',
+        marginBottom: '-26rem',
+        backgroundImage: `url(./images/line2.png)`,
+        padding: '35rem',
+        cursor: 'default',
+        overflow: 'hidden',
+        height: '100px',
+    }
+
       function MindTrack(props) {
         return (
           <Modal
@@ -183,7 +197,7 @@ export default function App() {
               </Link>
               
           for the full list of my portfolio.</p>
-        <CardDeck className="row ">
+        <CardDeck className="row container">
         <Card className="col-sm container2 ">
             <Card.Title variant="top" height="180" width="10" className="card__heading">
                 <h1 className="card__heading">MindTrack</h1></Card.Title>
@@ -200,7 +214,7 @@ export default function App() {
                 show={modalShow}
                 onHide={() => setModalShow(false)}
                 />
-                &nbsp; &nbsp;
+                &nbsp;
                 <Button variant="outline-primary" href="https://github.com/turja-c/MindTrack" target="_blank"> Github</Button>
             </div>
             </Card.Body>
@@ -223,7 +237,7 @@ export default function App() {
                 show={modalShow1}
                 onHide={() => setModalShow1(false)}
                 />
-                &nbsp; &nbsp;
+                &nbsp; 
                 <Button variant="outline-primary" href="https://github.com/AdityaGoyal1999/Soteria" target="_blank"> Github</Button>
             </div>
             </Card.Body>
@@ -245,15 +259,15 @@ export default function App() {
                 show={modalShow2}
                 onHide={() => setModalShow2(false)}
                 />
-                &nbsp; &nbsp;
+                &nbsp; 
                 <Button variant="outline-primary" href="https://github.com/turja-c/Refillr" target="_blank"> Github</Button>
             </div>
             </Card.Body>
         </Card>
         
         </CardDeck>
-        </div>
-
+      </div>
+           
     </>
   );
 }

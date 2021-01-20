@@ -53,3 +53,26 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 970px) and (max-width: 1200px){
+    /* .header {
+        margin-top: -2rem;
+    }
+    .text {
+        font-family: 'Merriweather', serif;
+        padding-top: 5px;
+        font-size: 17px;
+    } */
+    .face {
+        width: 100%;
+        height: 460px;
+        /* padding: 20; */
+        cursor: default;
+        overflow: hidden;
+        padding-top: -100px;
+        position: relative;
+        /* top:90px; */
+        margin-top: -332px;
+        margin-left: 280px;
+    }
+}

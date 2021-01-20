@@ -72,8 +72,7 @@ h1 {
   .grid-row {
     margin-top: -10px;
     padding-bottom: 50px;
-    /* margin-top: 50px; */
-    /* overflow: hidden; */
+    /* padding-left: 50px; */
     text-align: justify;
     float: right;
     margin-bottom: -50px;
@@ -86,7 +85,7 @@ h1 {
     overflow: hidden;
     text-align: justify;
     float: right;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   .container3 {
@@ -124,11 +123,8 @@ h1 {
       padding-right: 50px;
       margin-left: -250px;
       cursor: default;
-      /* padding-top: -20px; */
       position: relative;
-    /* top:90px; */
-    /* margin-top: -135px;
-    margin-left: 180px; */
+
     }
 
     @media (max-width: 970px) {
@@ -138,5 +134,8 @@ h1 {
       }
       .row:after {
         padding-right: -3rem;
+      }
+      .aboutFace {
+        padding-left: 100px;
       }
   }

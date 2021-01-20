@@ -1,10 +1,12 @@
 import React, {useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Jumbotron } from "react-bootstrap";
+// import Line from '../images/line2.png';
+
 // import Card from 'react-bootstrap/Card';
 // import { FaBorderNone } from "react-icons/fa";
 export default function App() {
-    const mediaMatch = window.matchMedia('(max-width: 400px)');
+    const mediaMatch = window.matchMedia('(min-width: 400px)');
     const [matches, setMatches] = useState(mediaMatch.matches);
 
     useEffect(() => {
@@ -35,12 +37,15 @@ export default function App() {
         
       })
     };
+    
     return (
     <>
-      <div className="fitted">
-        <Jumbotron fluid style={styles.container(matches)} >
-        {/* <img src="images/line.png" className="" /> */}
+      <div fluid>
+        <Jumbotron fluid className="fitted">
+        {/* <img src="images/line.png" className="fitted" /> */}
         </Jumbotron>
+        
+        
         </div>
     </>
   );

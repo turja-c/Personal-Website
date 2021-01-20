@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useRef, useState, useEffect, useCallback } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
@@ -14,6 +14,7 @@ import {
   } from 'react-icons/fa';
 import {useTransition, animated} from 'react-spring';
 import {Transition} from 'react-spring/renderprops';
+import SplitText from 'react-pose-text';
 
 export default function App() {
 
@@ -22,31 +23,10 @@ export default function App() {
       backgroundImage: `url(./images/face.png)`,
     };
 
-    const TEXTS = [
-      "Hello! 👋🏽",
-      "Bonjour! 👋🏽",
-      "নমস্কার! 👋🏽",
-
-    ];
-
-    const [index, setIndex] = React.useState(0);
- 
-    React.useEffect(() => {
-      const intervalId = setInterval(() =>
-        setIndex(index => index + 1),
-        8000 
-      );
-    });
-    
-    const [toggle, set] = useState(false)
-    const transitions = useTransition(toggle, null, {
-    from: { position: 'absolute', opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    })
-    return (
-      
-      <>
+  
+    return ( 
+    <>
+     
         <Jumbotron style={{
          backgroundImage: `url(./images/background1.png)`,
          backgroundPosition: 'center',
@@ -56,12 +36,15 @@ export default function App() {
       }}>
             <div className='container' >
             <h1 className="header">
-              <TextTransition
+              {/* <TextTransition
               text={ TEXTS[index % TEXTS.length] }
               springConfig={ presets.wobbly }
-              />
-              {/* Hello! 👋🏽 */}
+              /> */}
+              Hello! 👋🏽
             </h1>
+            
+          
+    
             <p className="text">My name is Turja Chowdhury, a marketing enthuiset-turned Computer Science <br></br>& Business Analytics Student currently attending Ryerson University.</p>
             <p className="text">I aspire to continue learning about the constantly changing technology industry <br></br> and diversifying my skills to adapt to new and complex challenges.</p>
             <div className='social-icons'>
@@ -109,5 +92,6 @@ export default function App() {
         </Jumbotron>
 
     </>
-  );
-}
+  )
+  }
+

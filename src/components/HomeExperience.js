@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import './HomeExperience.css'
+import { Link } from "react-router-dom";
 // import Sonnet from 'react-bootstrap/Sonnet';
 
 export default function App() {
@@ -48,19 +49,23 @@ export default function App() {
       <div className='container' style={divStyle1}>
       {/* <img src="images/line.png"style={divStyle3} /> */}
             <h1 className="header3">EXPERIENCE</h1>
-            <p className="text3">Learn a bit about my past experiences and achievements.</p> 
+            <p className="text3">Learn a bit about my past experiences and achievements. &nbsp;
+            <Link to="./About">
+             Click here 
+              </Link>
+              &nbsp; to learn more about me.</p> 
             <Tab.Container defaultActiveKey="first" className="experienceCard">
             <Row className='cards' >
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column" style={divStyle2}>
                   <Nav.Item >
-                    <Nav.Link eventKey="first" >Toronto Machine Learning</Nav.Link>
+                    <Nav.Link eventKey="first" style={{ color: "white"}}>Toronto Machine Learning</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Optimity</Nav.Link>
+                    <Nav.Link eventKey="second" style={{ color: "white"}}>Optimity</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="third">Alobar Yorkville</Nav.Link>
+                    <Nav.Link eventKey="third" style={{ color: "white"}}>Alobar Yorkville</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>

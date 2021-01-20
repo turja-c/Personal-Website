@@ -15,7 +15,7 @@ function Home() {
             <Navbar />
             <HomeMiddle />
             <HomeCards />
-            <HomeMidDivider />
+            {/* <HomeMidDivider /> */}
             <HomeExperience />
             <Footer />
         </>

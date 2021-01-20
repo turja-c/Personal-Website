@@ -28,7 +28,7 @@ export default function App() {
         <Card className="col-sm aboutCards">
             <Card.Header>
           <Card.Title>
-          <h2 className="header2">Programming Languages</h2>
+          <h2 className="header2" style={{ textAlign: "center" }}>Programming Languages</h2>
           </Card.Title>
         </Card.Header>
         <Card.Body>
@@ -75,7 +75,7 @@ export default function App() {
         <Card className="col-sm aboutCards">
             <Card.Header>
                 <Card.Title>
-                    <h2 className="header2">Tools & Frameworks</h2>
+                    <h2 className="header2" style={{ textAlign: "center" }}>Tools & Frameworks</h2>
                 </Card.Title>
             </Card.Header>
             <Card.Body>

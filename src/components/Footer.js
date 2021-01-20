@@ -13,6 +13,8 @@ import './Footer.css';
 export default function App() {
   const divStyle2 = {
     marginTop: '60px',
+    paddingTop: '15px',
+    paddingBottom: '15px'
     
   };
   const divStyle3 = {
@@ -21,51 +23,17 @@ export default function App() {
 
   return (
     <>
-     <Card className="footer" style={divStyle2} >
-        <Card.Header expand="lg" bg="light" variant="light"> 
-        <div className="container">
+     <div className="footer" style={divStyle2} className="container">
+        {/* <Card.Header expand="lg" bg="light" variant="light">  */}
+        <hr></hr>
+        <div className="text-center">
+          <h7>Designed and Created by Turja Chowdhury {"\n"}</h7>
+        </div>
         
-        <h7>Made with 	&hearts; by Turja Chowdhury {"\n"}</h7>
-        <div className='row container' style={divStyle3} >
-            <Link
-            className='social-icons-footer'
-            to='//www.instagram.com/turja.c/'
-            target='_blank'
-            aria-label='Instagram'
-            >
-            <FaInstagram />
-            </Link>
-    
-            <Link
-            className='social-icons-footer'
-            to='//www.github.com/turja-c'
-            target='_blank'
-            aria-label='Github'
-            >
-            <FaGithub />
-            </Link>
-            <Link
-            className='social-icons-footer'
-            to='//www.linkedin.com/in/turja-c/'
-            target='_blank'
-            aria-label='LinkedIn'
-            >
-            <FaLinkedin />
-            </Link>
-            <Link
-            className='social-icons-footer'
-            to='//www.facebook.com/turja.chowdhury.77'
-            target='_blank'
-            aria-label='Email'
-            >
-            <FaFacebook /> 
-            </Link>
-            </div>
-            </div>
             
-            </Card.Header>
+            {/* </Card.Header> */}
         
-     </Card>
+     </div>
     </>
   );
 }

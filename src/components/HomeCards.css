@@ -140,3 +140,24 @@
     font-weight: 900;
     /* padding: 20px; */
   }
+  .fitted {
+    display: flex;
+    overflow: hidden;
+    margin-top: -25rem;
+    margin-bottom: -25rem;
+    /* background-image: url(../../../../../public/images/line2.png); */
+    padding: 35rem;
+    cursor: default;
+    overflow: hidden;
+}
+
+@media (max-width: 970px) {
+  .fitted {
+      /* max-height: 100px; */
+      /* max-width: 50px; */
+      /* object-fit: fill; */
+      overflow: hidden;
+      display: none;
+      /* margin-top: -55rem; */
+  } 
+}
